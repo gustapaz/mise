@@ -3430,12 +3430,27 @@ input::placeholder {
 }
 @media (max-width: 480px) {
   .welcome-banner {
-    min-height: 555px;
+    min-height: 0;
+    flex-direction: column;
   }
   .hero-food {
-    top: 310px;
+    position: relative;
+    top: auto;
     bottom: auto;
-    right: -15px;
+    right: auto;
+    margin: 5px auto 25px;
+    height: 240px;
+  }
+  .banner-copy h2 {
+    max-width: none;
+    font-size: 2rem;
+  }
+  .banner-copy p {
+    max-width: none;
+  }
+  .label-bottom {
+    left: -20px;
+    bottom: 20px;
   }
 }
 @media (max-width: 700px) {
